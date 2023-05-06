@@ -21,4 +21,5 @@ def extract_zip(src, dst, member_name):
         return raw 
     
 raw = extract_zip(url, fname, member_name)
-print(raw)
+
+raw.to_csv("my_data.csv")
